@@ -49,7 +49,6 @@
           <li><a href="#portfolio">Projetos</a></li>
           <li><a href="#contact">Contato</a></li>
           <li><a href="#social">Redes sociais</a></li>
-          <li class="get-started"><a href="https://drive.google.com/file/d/1aqPZg_IqANdsFn_dTu8SNOM2l4C-wn3y/view?usp=sharing" target="_blank">CURRÍCULO</a></li>
         </ul>
       </nav>
       <!-- .nav-menu -->
@@ -67,7 +66,7 @@
           <h1>Prazer,</h1>
           <h1>Me chamo Rafael!</h1>
           <h2>Desenvolvedor em Graduação</h2>
-          <a href="https://api.whatsapp.com/send?phone=5511951673715" target="_blank" class="btn-get-started scrollto">Vamos Conversar?!</a>
+          <a href="#contact" target="_blank" class="btn-get-started scrollto">Vamos Conversar?!</a>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
           <img src="img/banner-image.png" class="img-fluid animated" alt="Banner" width="73%">
@@ -360,23 +359,29 @@
           <div class="col-lg-5 d-flex align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="info">
                 
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Localização:</h4>
-                <p>São Paulo - SP, Brasil</p>
-                </div>
+              <form id="contact-form" method="post" action="https://formspree.io/maypvpwe">
 
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>rafael.fiuza.vieira@outlook.com</p>
-              </div>
+                  <div class="form-group">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Nome Completo" required="required" data-error="É necessário seu nome.">
+                      <div class="form-control-border"></div>
+                      <div class="help-block with-errors"></div>
+                  </div>
 
-              <div class="phone">
-                <i class="icofont-whatsapp"></i>
-                <h4>Telefone:</h4>
-                <p>(11) 95167-3715</p>
-              </div>
+                  <div class="form-group">
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Endereço de e-mail" required="required" data-error="É necessário um e-mail válido.">
+                      <div class="form-control-border"></div>
+                      <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Sua mensagem" rows="4" required="required" data-error="Por favor, escreva uma mensagem."></textarea>
+                      <div class="form-control-border"></div>
+                      <div class="help-block with-errors"></div>
+                  </div>
+                  <center>
+                    <input type="submit" class="button btn-send" value="Enviar mensagem">
+                  </center>
+              </form>
 
             </div>
           </div>
@@ -406,7 +411,6 @@
                 <a href="https://www.instagram.com/v1perfx/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
                 <a href="https://twitter.com/V1PERFX" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/v1perfx/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=5511951673715" target="_blank" class="whatsapp"><i class="icofont-whatsapp"></i></a>
               </div>
             </div>
 
@@ -435,6 +439,7 @@
   <script src="utils/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="js/validator.js"></script>
   <script src="js/main.js"></script>
 
 </body>

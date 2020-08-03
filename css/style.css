@@ -16,7 +16,8 @@
   --gray-12: #9696961f;
   --blue: #007bff;
   --white: #fff;
-  --gray: #333;
+  --cinza: #333;
+  --cinza-2: #aaa;
 }
 
 /*--------------------------------------------------------------
@@ -637,7 +638,7 @@ section {
 .contact .info {
   border-top: 3px solid var(--red-viper);
   border-bottom: 3px solid var(--red-viper);
-  padding: 30px;
+  padding: 20px;
   background: var(--white);
   width: 100%;
   box-shadow: 0 0 24px 0 var(--black-viper-20);
@@ -683,7 +684,7 @@ section {
 .contact .info .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--gray);
+  background: var(--cinza);
   color: var(--white);
   line-height: 1;
   padding: 8px 0;
@@ -781,3 +782,121 @@ section {
     padding: 3px 0;
   }
 }
+
+/*--------------------------------------------------------------
+# Email form
+--------------------------------------------------------------*/
+/* Send Button */
+input[type=submit] {
+  display: inline-block;
+  position: relative;
+  padding: 0.8em 2em;
+  margin-bottom: .25em;
+  font-size: 0.975em;
+  line-height: 1.2;
+  border: 0;
+  outline: 0;
+  border: 2px solid var(--black-viper);
+  color: var(--black-viper);
+  text-shadow: none;
+  background: none;
+  border-radius: 0;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+  color: var(--white);
+  background-color: var(--black-viper);
+}
+/* /Send Button */
+
+/* Form controls */
+.form-group {
+  position: relative;
+  margin: 0 0 20px;
+}
+.form-control,
+.form-control:focus {
+  height: 42px;
+}
+
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus {
+  position: relative;
+  border: 1px solid var(--cinza-2);
+  border-radius: 0;
+  display: block;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 10px 35px 10px 12px;
+  width: 100%;
+  background: 0 0;
+  text-align: left;
+  color: inherit;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+textarea.form-control, textarea.form-control:focus {
+  height: auto;
+}
+
+.form-control + .form-control-border {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: var(--black-viper);
+  height: 2px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.form-control:focus + .form-control-border {
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: var(--red-viper);
+}
+
+.has-error .form-control + .form-control-border {
+  background: var(--red-viper);
+}
+
+/* Placeholders */
+.form-control::-moz-placeholder {
+  color: var(--cinza-2);
+}
+
+.form-control:-ms-input-placeholder {
+  color: var(--cinza-2);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: var(--cinza-2);
+}
+/* /Placeholders */
+
+.form-group .help-block {
+  position: absolute;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: -2px 0 0 10px;
+  color: var(--white);
+  background: var(--red-viper);
+}
+
+.form-group .help-block:empty {
+  display: none;
+}
+/* /Form controls */
