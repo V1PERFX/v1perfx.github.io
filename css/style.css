@@ -52,10 +52,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-radius: 3px;
   right: 15px;
   bottom: 15px;
-  background: var(--red-viper);
+  background: var(--black-viper);
   color: var(--white);
   transition: display 0.5s ease-in-out;
-  z-index: 999;
+  z-index: 996;
 }
 
 .back-to-top i {
@@ -66,8 +66,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .back-to-top:hover {
-  color: var(--white);
-  background: var(--red-viper-72);
+  color: var(--black-viper);
+  background: var(--red-viper);
   transition: background 0.2s ease-in-out;
 }
 
