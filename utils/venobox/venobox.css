@@ -110,10 +110,10 @@
     transform: rotate(-135deg);
 }
 .vbox-next span{
+    /* right: 10px; */
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    right: 10px;
 }
 /* ------- inline window ------ */
 .vbox-inline{

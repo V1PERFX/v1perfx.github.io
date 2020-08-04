@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: var(--red-viper);
   color: var(--white);
   transition: display 0.5s ease-in-out;
-  z-index: 99999;
+  z-index: 999;
 }
 
 .back-to-top i {
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 9999;
+  z-index: 999;
   overflow-y: auto;
   left: -260px;
   width: 260px;
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   position: fixed;
   right: 15px;
   top: 22px;
-  z-index: 9998;
+  z-index: 998;
   border: 0;
   background: none;
   font-size: 24px;
@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .mobile-nav-overly {
   width: 100%;
   height: 100%;
-  z-index: 9997;
+  z-index: 997;
   top: 0;
   left: 0;
   position: fixed;
