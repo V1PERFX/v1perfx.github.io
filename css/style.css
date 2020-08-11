@@ -2,9 +2,10 @@
 # Colors
 --------------------------------------------------------------*/
 :root {
-  --red-viper: #f21b33;
-  --red-viper-72: #f21b33b8;
-  --red-dark-98: #a81424fa;
+  --red-detais: #ff1d40;
+  --blue-light-viper: #92a1bc;
+  --blue-light-viper-72: #92a1bcb8;
+  --blue-light-dark: #657394;
   --black-viper: #1e1e1e;
   --black-viper-81: #1e1e1ecf;
   --black-viper-57: #1e1e1e91;
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 15px;
   bottom: 15px;
   background: var(--black-viper);
-  color: var(--white);
+  color: var(--red-detais);
   transition: display 0.5s ease-in-out;
   z-index: 996;
 }
@@ -66,8 +67,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .back-to-top:hover {
-  color: var(--black-viper);
-  background: var(--red-viper);
+  color: var(--red-detais);
+  background: var(--blue-light-viper);
   transition: background 0.2s ease-in-out;
 }
 
@@ -130,12 +131,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
   text-decoration: none;
 }
 
 .nav-menu .get-started a {
-  background: var(--red-viper);
+  background: var(--blue-light-viper);
   color: var(--white);
   border-radius: 10px;
   margin: 0 15px;
@@ -143,7 +144,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu .get-started a:hover {
-  background: var(--red-viper-72);
+  background: var(--blue-light-viper-72);
   color: var(--white);
 }
 
@@ -157,7 +158,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: var(--red-dark-98);
+  background: var(--blue-light-dark);
   transition: 0.4s;
 }
 
@@ -182,7 +183,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav .get-started a {
-  background: var(--red-viper);
+  background: var(--blue-light-viper);
   color: var(--white);
   border-radius: 10px;
   margin: 15px;
@@ -190,7 +191,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav .get-started a:hover {
-  background: var(--red-viper-72);
+  background: var(--blue-light-viper-72);
   color: var(--white);
 }
 
@@ -233,11 +234,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: var(--white);
 } 
 .icofont-navigation-menu:before {
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
 }
 
 .icofont-close:before {
-  color: var(--red-viper);
+  color: var(--black-viper);
 }
 
 /*--------------------------------------------------------------
@@ -276,11 +277,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: 0.5s;
   margin: 10px;
   color: var(--white);
-  background: var(--red-viper);
+  background: var(--blue-light-viper);
 }
 
 #hero .btn-get-started:hover {
-  background: var(--red-viper-72);
+  background: var(--blue-light-viper-72);
   transform: scale(1.2);
 }
 
@@ -321,7 +322,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     margin-bottom: 30px;
   }
   #hero .hero-img img {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -399,7 +400,7 @@ section {
   display: block;
   width: 60px;
   height: 2px;
-  background: var(--red-viper);
+  background: var(--blue-light-viper);
   bottom: 0;
   left: calc(50% - 30px);
 }
@@ -414,11 +415,11 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: var(--white);
-  background: var(--red-viper);
+  background: var(--blue-light-viper);
 }
 
 #about .btn-get-cv:hover {
-  background: var(--red-viper-72);
+  background: var(--blue-light-viper-72);
   transform: scale(1.2);
 }
 
@@ -442,7 +443,7 @@ section {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about .about-img img {
     max-width: 90%;
   }
@@ -466,7 +467,7 @@ section {
 
 .services .icon-box:hover {
   transform: translateY(-5px);
-  border-color: var(--red-viper);
+  border-color: var(--red-detais);
   transform: scale(1.1);
 }
 
@@ -474,7 +475,7 @@ section {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
 }
 
 .services .title {
@@ -521,7 +522,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -566,7 +567,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
   margin: 0 4px;
   font-size: 18px;
   line-height: 1;
@@ -636,8 +637,8 @@ section {
   background-color: var(--gray-19);
 }
 .contact .info {
-  border-top: 3px solid var(--red-viper);
-  border-bottom: 3px solid var(--red-viper);
+  border-top: 3px solid var(--blue-light-viper);
+  border-bottom: 3px solid var(--blue-light-viper);
   padding: 20px;
   background: var(--white);
   width: 100%;
@@ -646,7 +647,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
   float: left;
   width: 44px;
   height: 44px;
@@ -663,7 +664,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
 }
 
 .contact .info p {
@@ -697,7 +698,7 @@ section {
 }
 
 .contact .info i:hover {
-  background: var(--red-viper);
+  background: var(--blue-light-viper);
   color: var(--white);
 }
 
@@ -751,7 +752,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--red-viper);
+  background: var(--blue-light-viper);
   color: var(--white);
   line-height: 1;
   padding: 8px 0;
@@ -765,7 +766,7 @@ section {
 
 #footer .footer-top .social-links a:hover {
   background: var(--gray-19);
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
   text-decoration: none;
   transform: scale(1.1);
 }
@@ -864,11 +865,11 @@ textarea.form-control, textarea.form-control:focus {
   left: 0;
   right: 0;
   z-index: 1;
-  color: var(--red-viper);
+  color: var(--blue-light-viper);
 }
 
 .has-error .form-control + .form-control-border {
-  background: var(--red-viper);
+  background: var(--red-detais);
 }
 
 /* Placeholders */
@@ -893,7 +894,7 @@ textarea.form-control, textarea.form-control:focus {
   line-height: 1.5em;
   margin: -2px 0 0 10px;
   color: var(--white);
-  background: var(--red-viper);
+  background: var(--red-detais);
 }
 
 .form-group .help-block:empty {
