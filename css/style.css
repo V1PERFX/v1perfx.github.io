@@ -17,7 +17,7 @@ body {
   
 }
 
-@-webkit-keyframes Gradient {
+/* @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
 	}
@@ -51,7 +51,7 @@ body {
 	100% {
 		background-position: 0% 50%
 	}
-}
+} */
 
 .container-fluid {
   max-width: 540px;
