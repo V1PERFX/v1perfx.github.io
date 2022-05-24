@@ -85,6 +85,23 @@ body {
   font-size: 1.5rem;
   line-height: 2.5rem;;
 }
+/* Mudar cor quando seleciona */
+.title h1::selection {
+  background: #bb9e67;
+  color: #971b1b;
+}
+
+.title h2::selection {
+  background: #bb9e67;
+  color: #971b1b;
+}
+
+/* BIO */
+/* Mudar cor quando seleciona */
+.bio p::selection {
+  background: #bb9e67;
+  color: #971b1b;
+}
 
 /* LINKS*/
 .links {
