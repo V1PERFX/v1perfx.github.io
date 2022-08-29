@@ -9,7 +9,7 @@ body {
   /* Mudar família da fonte */
   font-family: 'Poppins', sans-serif!important;
   /* Mudar cor da fonte */
-  color: #ffffff!important;
+  color: #ffffff!important; 
   /* Não alterar */
   font-size: 1.1rem!important;
   line-height: 1.5rem!important;
@@ -153,4 +153,27 @@ footer a {
 
 footer a:hover {
   color: #e2c07e;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #eeeeee!important;
+    color: #232323!important;
+  }
+
+  /* BOTÃO */
+  .botao {
+    color: #ffffff;
+    background-color: #232323;
+  }
+
+  /* SOCIAL */
+  .social a {
+    color: #232323;
+  }
+
+  /* FOOTER */
+  footer a {
+    color: #232323;
+  }
 }
