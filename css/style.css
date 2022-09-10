@@ -1,7 +1,10 @@
 body {
+  /* Imagem de fundo */
+  background-image: url(../img/VmQnal.png);
+  background-repeat: repeat;
   /* Mudar cor do fundo */
   background-color: #232323!important;
-  /* Mudar família da fonte */
+    /* Mudar família da fonte */
   font-family: 'Poppins', sans-serif!important;
   /* Mudar cor da fonte */
   color: #ffffff!important; 
