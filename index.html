@@ -18,6 +18,9 @@
   <link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
   <!-- Custom font styles for this template // Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +36,7 @@
       <div class="row">
         <div class="col">
           <p>
-            <img src="img/61255847.png">
+            <img id="profileImage" alt="Profile Photo">
           </p>
         </div>
       </div>
@@ -44,8 +47,8 @@
     <div class="container-fluid title">
       <div class="row">
         <div class="col">
-          <h1>Rafael Fiuza</h1>
-          <h2>@V1PERFX</h2>
+          <h1 id="profileName"></h1>
+          <h2 id="profileNick"></h2>
         </div>
       </div>
     </div>
@@ -55,7 +58,7 @@
     <div class="container-fluid bio">
       <div class="row">
         <div class="col">
-          <p>Analista de Service Desk / Desenvolvedor Front-End</p>
+          <p id="profileProfession"></p>
         </div>
       </div>
     </div>
@@ -64,13 +67,8 @@
     <!--Links-->
     <div class="container-fluid links">
       <div class="row">
-        <div class="col">
-          <a href="https://github.com/V1PERFX/imersaoGameDev" target="_blank" class="botao">
-            <p><i class="bi bi-controller" style="font-size: 1.1rem;"></i> Hero Dash</p>
-          </a>
-          <a href="https://github.com/V1PERFX/unicar" target="_blank" class="botao">
-            <p><i class="bi bi-window-fullscreen" style="font-size: 1.1rem;"></i> UniCar</p>
-          </a>
+        <div class="col" id="linka">
+          <!-- Conteudo do Script Links -->
         </div>
       </div>
     </div>
@@ -134,5 +132,23 @@
 </body>
 <!-- Bootstrap core JS -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Script Links -->
+<script type="module">
+  import { config } from '/js/config.js'
+  config.links.forEach(i => {
+    $('#linka').append(`
+      <a href="${i.url}" target="_blank" class="botao">
+        <p><i class="${i.icon}" style="font-size: 1.1rem;"></i> ${i.title}</p>
+      </a>
+    `); 
+  });
+
+  document.getElementById("profileImage").src = config.imageURL;
+  document.getElementById("profileName").innerHTML = config.name;
+  document.getElementById("profileNick").innerHTML = config.nick;
+  document.getElementById("profileProfession").innerHTML = config.profession;
+  
+</script>
 
 </html>
