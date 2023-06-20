@@ -7,12 +7,11 @@ body {
     /* Mudar família da fonte */
   font-family: 'Poppins', sans-serif!important;
   /* Mudar cor da fonte */
-  color: #ffffff!important; 
+  color: #f2f2f2!important; 
   /* Não alterar */
   font-size: 1.1rem!important;
   line-height: 1.5rem!important;
   text-align: center!important;
-  
 }
 
 .container-fluid {
@@ -37,19 +36,21 @@ body {
 
 /* TITLE */
 .title {
-  font-family:'Recursive', sans-serif!important;
+  font-family:'Chakra Petch', sans-serif!important;
 }
 
 .title h1 {
-  font-weight: 800;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 2.80rem;
   line-height: 3rem;
+  letter-spacing: 0.18rem;
 }
 
 .title h2 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.70rem;
   line-height: 2.5rem;
+  letter-spacing: 0.14rem;
 }
 
 /* BIO */
@@ -62,14 +63,14 @@ body {
 /* BOTÃO */
 .botao {
   /* Mudar cor da fonte do botão */
-  color: #000000;
+  color: #282828;
   /* Mudar cor de fundo do botão */
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   /* Não alterar */
   max-width: 100%;
   min-height: 3rem;
   margin-top: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   display: block;
   border-radius: 8px;
@@ -78,8 +79,8 @@ body {
 
 .botao:hover {
   /* Cor do texto e fundo - Quando tem link */
-  color: #971b1b;
-  background-color: #bb9e67;
+  color: #282828;
+  background-color: #05c2ba;
 }
 
 /* SOCIAL */
@@ -89,13 +90,13 @@ body {
 .social a {
   text-decoration: none;
   /* Mudar cor da fonte do ícone */
-  color: #ffffff;
+  color: #f2f2f2;
 }
 
 .social a:hover {
   /* Cor do ícone - Quando tem link */
   text-decoration: none;
-  color: #e2c07e;
+  color: #05c2ba;
 }
 
 .social li {
@@ -113,11 +114,11 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #ffffff;
+  color: #f2f2f2;
 }
 
 footer a:hover {
-  color: #e2c07e;
+  color: #05c2ba;
 }
 
 @media (prefers-color-scheme: light) {
@@ -128,17 +129,17 @@ footer a:hover {
 
   /* BOTÃO */
   .botao {
-    color: #ffffff;
-    background-color: #232323;
+    color: #f2f2f2;
+    background-color: #282828;
   }
 
   /* SOCIAL */
   .social a {
-    color: #232323;
+    color: #282828;
   }
 
   /* FOOTER */
   footer a {
-    color: #232323;
+    color: #282828;
   }
 }
