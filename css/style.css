@@ -80,7 +80,7 @@ body {
 .botao:hover {
   /* Cor do texto e fundo - Quando tem link */
   color: #282828;
-  background-color: #05c2ba;
+  background-color: #00c6bc;
 }
 
 /* SOCIAL */
@@ -96,7 +96,7 @@ body {
 .social a:hover {
   /* Cor do ícone - Quando tem link */
   text-decoration: none;
-  color: #05c2ba;
+  color: #00c6bc;
 }
 
 .social li {
@@ -118,7 +118,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #05c2ba;
+  color: #00c6bc;
 }
 
 @media (prefers-color-scheme: light) {
