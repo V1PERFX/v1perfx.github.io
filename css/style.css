@@ -121,11 +121,18 @@ footer a:hover {
   color: #00c6bc;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     background-image: url(../img/VmQnal-light.png);
     background-color: #eeeeee!important;
     color: #232323!important;
+  }
+
+  /* PHOTO */
+  .photo img {
+    -moz-box-shadow: 0px 6px 5px #505050;
+    -webkit-box-shadow: 0px 6px 5px #505050;
+    box-shadow: 0px 2px 10px #505050;
   }
 
   /* BOTÃO */
