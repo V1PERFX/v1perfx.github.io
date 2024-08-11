@@ -1,6 +1,6 @@
 export const config = {
   links: [
-    { title: 'Hero Dash', url: 'https://github.com/V1PERFX/imersaoGameDev', icon: 'bi bi-controller' },
-    { title: 'UniCar', url: 'https://github.com/V1PERFX/unicar', icon: 'bi bi-window-fullscreen' },
+    { title: 'Gerador de Senha', url: 'https://gh.rafaelviper.com.br/gerador-senha', icon: 'bi bi-star-fill' },
+    { title: 'CSV Viewer', url: 'https://gh.rafaelviper.com.br/csv', icon: 'bi bi-star' }
   ]
 }
