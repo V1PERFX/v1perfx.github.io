@@ -121,7 +121,7 @@ footer a:hover {
   color: #00c6bc;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     background-image: url(../img/VmQnal-light.png);
     background-color: #eeeeee!important;
