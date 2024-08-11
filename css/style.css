@@ -1,6 +1,6 @@
 body {
   /* Imagem de fundo */
-  background-image: url(../img/VmQnal.png);
+  background-image: url(../img/VmQnal-dark.png);
   background-repeat: repeat;
   /* Mudar cor do fundo */
   background-color: #232323!important;
@@ -123,6 +123,7 @@ footer a:hover {
 
 @media (prefers-color-scheme: light) {
   body {
+    background-image: url(../img/VmQnal-light.png);
     background-color: #eeeeee!important;
     color: #232323!important;
   }
