@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif!important;
+  background-image: url(../img/background-padrao.png);
+  background-repeat: repeat;
+  /* Mudar cor do fundo */
+  background-color: #232323!important;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 512px;
+}
+
+.logo img {
+  width: 90%;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+/* @media (max-width: 768px) {
+  p {
+      font-size: 1rem;
+  }
+} */
