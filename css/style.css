@@ -6,10 +6,10 @@
 
 body {
   font-family: 'Poppins', sans-serif!important;
-  background-image: url(../img/background-padrao.png);
-  background-repeat: repeat;
+  /* background-image: url(../img/background-padrao.png); */
+  /* background-repeat: repeat; */
   /* Mudar cor do fundo */
-  background-color: #232323!important;
+  /* background-color: #232323!important; */
   color: #ffffff;
   margin: 0;
   display: flex;
@@ -44,4 +44,50 @@ p {
   .logo img {
     width: 70%;
   }
+}
+
+/* Hero Tile */
+
+.hero-tile {
+  position: relative;
+  overflow: hidden;
+
+  /* Variáveis customizáveis */
+  --tile-image: url('../img/hero-tile.png');
+  --tile-color: #1E1E1E;
+  --tile-speed: 120s;
+  --tile-direction-x: -900px;
+  --tile-direction-y: -1000px;
+  --tile-rotation-x: 10deg;
+  --tile-rotation-z: -10deg;
+  --tile-skew-x: 10deg;
+}
+
+.hero-tile::before {
+  content: "";
+  position: absolute;
+  width: 2000%;
+  height: 2000%;
+  top: -1000%;
+  left: -1000%;
+  background: var(--tile-image) repeat;
+  background-color: var(--tile-color);
+  transform: rotateX(var(--tile-rotation-x)) rotateZ(var(--tile-rotation-z)) skewX(var(--tile-skew-x));
+  z-index: -1;
+  animation: hero-tile-scroll var(--tile-speed) linear infinite;
+}
+
+@keyframes hero-tile-scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: var(--tile-direction-x) var(--tile-direction-y);
+  }
+}
+
+/* Conteúdo sempre acima do background animado */
+.hero-tile * {
+  position: relative;
+  z-index: 1;
 }
