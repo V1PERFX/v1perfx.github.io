@@ -1,0 +1,45 @@
+/* Hero Tile - Template Reutilizável com Variáveis */
+
+.hero-tile {
+  position: relative;
+  overflow: hidden;
+
+  /* Variáveis customizáveis */
+  --tile-image: url('../img/hero-tile.png');
+  --tile-color: rgba(91, 42, 134, 0.95);
+  --tile-speed: 120s;
+  --tile-direction-x: -1000px;
+  --tile-direction-y: -1000px;
+  --tile-rotation-x: 15deg;
+  --tile-rotation-z: -15deg;
+  --tile-skew-x: 15deg;
+}
+
+.hero-tile::before {
+  content: "";
+  position: absolute;
+  width: 2000%;
+  height: 2000%;
+  top: -1000%;
+  left: -1000%;
+  background: var(--tile-image) repeat;
+  background-color: var(--tile-color);
+  transform: rotateX(var(--tile-rotation-x)) rotateZ(var(--tile-rotation-z)) skewX(var(--tile-skew-x));
+  z-index: -1;
+  animation: hero-tile-scroll var(--tile-speed) linear infinite;
+}
+
+@keyframes hero-tile-scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: var(--tile-direction-x) var(--tile-direction-y);
+  }
+}
+
+/* Conteúdo sempre acima do background animado */
+.hero-tile * {
+  position: relative;
+  z-index: 1;
+}
